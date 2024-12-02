@@ -1,7 +1,7 @@
 # calculator.py
 
 class Calculator:
-    def abs_add(self, a, b): # pragma: no cover
+    def abs_add(self, a, b):
         if a < 0:
             a = -a
         if b < 0:
