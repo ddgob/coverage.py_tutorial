@@ -35,6 +35,20 @@ coverage run -m unittest discover
 
 - Veja como o coverage.py se integra de forma simples e rápida com o framework de testes.
 
+### Exclusão de Arquivos de Teste
+
+- Veja que temos um arquivo `.coveragerc` no diretório raiz do projeto. Esse arquivo serve como um `config` para o `coverage.py`. Dentro dele temos o seguinte conteúdo:
+
+```
+[run]
+omit =
+    test_*.py
+```
+
+- Isso ignora todos os arquivos que contém o padrão `test_*.py` da nossa análise de cobertura. Ou seja, estamos desconsiderando todos os nossos arquivos de teste da nossa análise de cobertura.
+
+- Além disso poderíamos adicionar várias configurações que omitiremos aqui por questões de tempo.
+
 ### Geração de Relatórios
 
 #### Relatório Simples Pelo Terminal
